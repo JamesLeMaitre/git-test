@@ -1,0 +1,142 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  background-color: rgba(243, 243, 243, 0.849);
+
+}
+
+#root {
+
+  width: 30vw;
+  height: 90vh;
+  margin: 0 auto;
+  background: rgba(231, 231, 231, 0.849);
+  box-shadow: -10px -10px 15px rgb(255, 255, 255),
+    10px 10px 15px rgb(170, 170, 170);
+  border-radius: 20px;
+  margin-top: 3%;
+}
+
+.todo__container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+ 
+}
+
+.todo__header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+ 
+}
+
+
+.todo__list {
+  margin-top: 15px;
+}
+
+.todo__item {
+  margin-bottom: 15px;
+  font-size: 22px;
+  list-style-type: none;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  padding: 5px;
+}
+
+input[type="checkbox"]{
+  margin-right: 10px;
+}
+
+.todo__title {
+  padding-top: 20px 0;
+  color: gray;
+  letter-spacing: 1.5px;
+  flex: 1;
+}
+
+.todo__content {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+}
+
+form {
+  width: 100%;
+  height: 50px;
+}
+.todo__input {
+  background: #fff;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.input__todo {
+  flex: 1;
+  width: 100%;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+.todo__button {
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 5px;
+  background: rgb(6, 177, 245);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.todo__button:hover {
+  background: white;
+  color: rgb(6, 177, 245);
+  box-shadow: -8px -5px 6px rgb(255, 255, 255),
+    5px 5px 6px rgba(139, 139, 139, 0.849);
+}
+
+.navbar{
+    margin: 2rem;}
+
+.nav-items ul{
+   list-style: none
+}
+.nav-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list a:hover{
+    color: yellow;
+}
+.nav-list{
+    padding: 1.1rem;
+    text-transform: uppercase;
+}
+
+.nav-items{
+    background-color: #1f45e9;
+    width: 20vw;
+    border-radius: .5rem;
+    color: white;}
